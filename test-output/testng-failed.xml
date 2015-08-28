@@ -6,6 +6,7 @@
       <class name="scripts.US_FranchisePartner_English">
         <methods>
           <include name="testFP_US_ENG"/>
+          <include name="postCondtion"/>
           <include name="preCondition"/>
         </methods>
       </class> <!-- scripts.US_FranchisePartner_English -->
