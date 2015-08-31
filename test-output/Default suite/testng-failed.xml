@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="scripts.US_FranchisePartner_English">
+      <class name="Asserts.Home_Page">
         <methods>
-          <include name="testFP_US_ENG"/>
-          <include name="postCondtion"/>
+          <include name="closeFirefox"/>
+          <include name="PageName"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- scripts.US_FranchisePartner_English -->
+      </class> <!-- Asserts.Home_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

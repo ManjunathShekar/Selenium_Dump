@@ -14,6 +14,12 @@ public class HomePage extends BasePage
 	@FindBy(xpath="//button[@success='nextStep()']")
 	private WebElement Continue;
 	
+	@FindBy(xpath=".//*[@id='page-wrapper']/div[2]/div/div[1]/div[2]/span[1]")
+	private WebElement PageName;
+	
+	@FindBy(xpath=".//*[@id='page-wrapper']/div[2]/div/div[1]/div[2]/span[2]")
+	private WebElement PageNumber;
+	
 	public HomePage(WebDriver driver)
 	{
 		super(driver);
@@ -25,4 +31,16 @@ public class HomePage extends BasePage
 		SelectCountry.click();
 
 	}
+	
+	public void PageNumber()
+	{
+		PageNumber.getText();
+	}
+
+	public void PageName()
+	{
+		PageName.getText();
+	}
+
+	
 }

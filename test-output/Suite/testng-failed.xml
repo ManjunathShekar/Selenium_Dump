@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="scripts.US_FranchisePartner_English">
+        <methods>
+          <include name="testFP_US_ENG"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- scripts.US_FranchisePartner_English -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
