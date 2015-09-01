@@ -282,34 +282,31 @@ The following Java Log4J example class is a simple example that initializes, and
         }
       }
     }
+
 Important Links
 
-Official Website
+* Selenium Documentation - http://docs.seleniumhq.org/docs/
 
-Selenium Documentation
+* Selenium WebDriver - http://docs.seleniumhq.org/projects/webdriver/
 
-Selenium WebDriver
+* Selenium Download Page - http://docs.seleniumhq.org/download/
 
-Selenium Download Page
+* Selenium Support Page - http://docs.seleniumhq.org/support/
 
-Selenium Support Page
+* Platforms Supports - http://docs.seleniumhq.org/about/platforms.jsp
 
-Platforms Supports
+* Language Supports - http://docs.seleniumhq.org/about/platforms.jsp#programming-languages
 
-Language Supports
+* Testing Frameworks - http://docs.seleniumhq.org/about/platforms.jsp#testing-frameworks
 
-Testing Frameworks
+* Test Design Considerations - http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp
 
-Test Design Considerations
+* UI Mapping - http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#ui-mapping
 
-UI Mapping
+* Page Object Design Pattern - http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#page-object-design-pattern
 
-Page Object Design Pattern
+* Data Driven Testing - http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#data-driven-testing
 
-Data Driven Testing
+* Database Validation - http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#database-validation
 
-Database Validation
-
-Selenium Grid
-
-Java Documentatuin
+* Java Documentatuin - http://selenium.googlecode.com/svn/trunk/docs/api/java/index.html
