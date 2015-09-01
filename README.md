@@ -284,15 +284,32 @@ The following Java Log4J example class is a simple example that initializes, and
     }
 Important Links
 
-* Selenium Documentation
-* Selenium WebDriver
-* Selenium Download Page
-* Selenium Support Page
-* Platforms Supports
-* Language Supports
-* Test Design Considerations
-* UI Mapping
-* Page Object Design Pattern
-* Data Driven Testing
-* Database Validation
-* Java Documentatuin
+Official Website
+
+Selenium Documentation
+
+Selenium WebDriver
+
+Selenium Download Page
+
+Selenium Support Page
+
+Platforms Supports
+
+Language Supports
+
+Testing Frameworks
+
+Test Design Considerations
+
+UI Mapping
+
+Page Object Design Pattern
+
+Data Driven Testing
+
+Database Validation
+
+Selenium Grid
+
+Java Documentatuin
