@@ -14,12 +14,12 @@ Prior to knowing about the Hybrid Test Automation Framework, we should know abou
 Why do we need Automation framework?
 Using Framework, we can solve many issues like
 
-	* Writing code once and reusing it. Significant Reduction in Testing Cycle Time
-	* Running the script with different set of data.
-	* Executing the scripts end-to-end without any manual intervention. ( If any error occurs from tool or application, Script run will stop. If we use framework, it will skip or fail that testcase and run with the next testcase.)
-	* With basic knowledge on tool also anyone can run and write the script. (All the script, Keywords has been written by experts, we have to know how to use those keywords)
-	* Can able to run scenarios by selecting YES or NO. (Modular Driven Framework)
-	* Maintenance becomes very easy.
+* Writing code once and reusing it. Significant Reduction in Testing Cycle Time
+* Running the script with different set of data.
+* Executing the scripts end-to-end without any manual intervention. ( If any error occurs from tool or application, cript run will stop. If we use framework, it will skip or fail that testcase and run with the next testcase.)
+* With basic knowledge on tool also anyone can run and write the script. (All the script, Keywords has been written by experts, we have to know how to use those keywords)
+* Can able to run scenarios by selecting YES or NO. (Modular Driven Framework)
+* Maintenance becomes very easy.
 
 Combination of above all framework is nothing but Hybrid Driven Framework.
 Example: In an Enrollment Application, We have 6 scenarios.
