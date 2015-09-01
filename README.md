@@ -295,4 +295,3 @@ Page Object Design Pattern
 Data Driven Testing
 Database Validation
 Java Documentatuin
-  
