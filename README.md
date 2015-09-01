@@ -150,47 +150,54 @@ Generate reports:
 Send reports by Email:
 Screenshot
 Driver Script:
+Keywords Library:
+Object Repository:
+All the element locator are kept in the Object Repository folder.
+Generate reports:
+Send reports by Email:
+Screenshot
+Driver Script:
 Example codes,
 Example, Create an instance of WebDriver
     WebDriver driver = new FirefoxDriver();
 Example, Navigate to the Totsy home page
 
-   driver . get("http://www.enrollment.unicity.com" );
+    driver . get("http://www.enrollment.unicity.com" );
 Example Find an element by ID, className, and (ummm...)
 
-   WebElement searchBox = driver. findElement(By .name( "someElement" ));
+    WebElement searchBox = driver. findElement(By .name( "someElement" ));
 Example, Display the title of the page
 
-   System . out. println( "Title: " + driver. getTitle());
+    System . out. println( "Title: " + driver. getTitle());
 Example, Mouse hover to the Element
 
-   WebElement menuOption = driver. findElement(By .xpath( " .//*[@id='page-wrapper']/div[2]/div/div[1]/div[2]/span[1] "));
+    WebElement menuOption = driver. findElement(By .xpath( " .//*[@id='page-wrapper']/div[2]/div/div[1]/div[2]/span[1] "));
 Actions builder = new Actions(driver);   
     builder . moveToElement(menu). build() .perform();
     menuOption . click();
 Example, JavaScripts in Selenium
 
-   ((JavascriptExecutor)driver). executeScript( "document.getElementById('someElement').click();" );
+    ((JavascriptExecutor)driver). executeScript( "document.getElementById('someElement').click();" );
 Example, JQuery in Selenium
 
-   HtmlUnitDriver drv = new HtmlUnitDriver(BrowserVersion .FIREFOX_3_6 );
-   drv . setJavascriptEnabled(true );
+    HtmlUnitDriver drv = new HtmlUnitDriver(BrowserVersion .FIREFOX_3_6 );
+    drv . setJavascriptEnabled(true );
     try {
      jQueryFactory jq = new jQueryFactory();
      jq . setJs(drv);
 
-   drv . get("http://google.com" );
-   jq . query("[name=q]" ) .val( "SeleniumJQuery" ). parents( "form:first") . submit();
+     drv . get("http://google.com" );
+     jq . query("[name=q]" ) .val( "SeleniumJQuery" ). parents( "form:first") . submit();
 
-   String results = jq. queryUntil( "#resultStats:contains(results)" ). text();  
-      System . out. println(results .split( " " )[1 ] + " results found!" );
+        String results = jq. queryUntil( "#resultStats:contains(results)" ). text();  
+        System . out. println(results .split( " " )[1 ] + " results found!" );
           } finally {
                drv . close();
                }
 Example, Ajax in Selenium
 
-   FluentWait< By> fluentWait = new FluentWait< By >(By . tagName("TEXTAREA" ));
-   fluentWait . pollingEvery(100 , TimeUnit .MILLISECONDS );
+    FluentWait< By> fluentWait = new FluentWait< By >(By . tagName("TEXTAREA" ));
+    fluentWait . pollingEvery(100 , TimeUnit .MILLISECONDS );
     fluentWait . withTimeout(1000 , TimeUnit .MILLISECONDS );
     fluentWait . until(new Predicate<By > () {
         public boolean apply(By by ) {
@@ -206,64 +213,64 @@ Example, Selenium Regex
 Selenium supports a few methods that help match text patterns. However, selenium locators don � t accept regular expressions. Only patterns or values accept them.
 Example, Globbing:
 
-   selenium . click("link=glob:*Gifts" ); // Clicks on any link with text suffixed with 'Gifts'
-   selenium . verifyTextPresent("glob:*Gifts*" );
+    selenium . click("link=glob:*Gifts" ); // Clicks on any link with text suffixed with 'Gifts'
+    selenium . verifyTextPresent("glob:*Gifts*" );
 Example, Regular Expressions:[regexp, regexpi]
 
-   selenium . click("link=regexpi:^Over \\$[0-9]+$" );  //matches links such as 'Over $75', 'Over $85' etc
+    selenium . click("link=regexpi:^Over \\$[0-9]+$" );  //matches links such as 'Over $75', 'Over $85' etc
 Example, Contains:
 
-   selenium . highlight("//div[contains(@class,'cnn_sectbin')]" );  //highlights the first div with class attribute that contains 'cnn_sectbin'
-   selenium . highlight("css=div#cat_description:contains(\"to last\")" );  //locating a div containing the text 'to last' using css selector
+    selenium . highlight("//div[contains(@class,'cnn_sectbin')]" );  //highlights the first div with class attribute that contains 'cnn_sectbin'
+    selenium . highlight("css=div#cat_description:contains(\"to last\")" );  //locating a div containing the text 'to last' using css selector
 Example, Starts-with:
 
-   selenium . click("//img[starts-with(@id,'cat_prod_image')]" );  //clicks on the first image that has an id attribute that starts with 'cat_prod_image'
-   selenium . click("//div[starts-with(@id,'tab_dropdown')]/a[last()]" );  //clicks on the last link within the div that has a class attribute starting with 'tab_dropdown'
+    selenium . click("//img[starts-with(@id,'cat_prod_image')]" );  //clicks on the first image that has an id attribute that starts with 'cat_prod_image'
+    selenium . click("//div[starts-with(@id,'tab_dropdown')]/a[last()]" );  //clicks on the last link within the div that has a class attribute starting with 'tab_dropdown'
     selenium . click("//div[starts-with(@id,'tab_dropdown')]/a[position()=2]" ); //clicks on the second link within the div that has a class attribute starting with 'tab_dropdown'
     selenium . highlight("css=div[class^='samples']" ); //highlights div with class that starts with 'samples'
 Example, Ends-with:
 
-   selenium . highlight("css=div[class$='fabrics']" ); //highlights div with class that ends with 'fabrics'
-   selenium . click("//img[ends-with(@id,'cat_prod_image')]" ); //clicks on the first image that has an id attribute that ends with 'cat_prod_image'
+    selenium . highlight("css=div[class$='fabrics']" ); //highlights div with class that ends with 'fabrics'
+    selenium . click("//img[ends-with(@id,'cat_prod_image')]" ); //clicks on the first image that has an id attribute that ends with 'cat_prod_image'
 Example, A Log4J example Java class
 The following Java Log4J example class is a simple example that initializes, and then uses, the Log4J logging library for Java applications. As you can see the configuration is pretty simple.
 
-   package com.devdaily.log4jdemo;
+    package com.devdaily.log4jdemo;
 
-   import org.apache.log4j.Category;
-   import org.apache.log4j.PropertyConfigurator;
-   import java.util.Properties;
-   import java.io.FileInputStream;
-   import java.io.IOException;
+    import org.apache.log4j.Category;
+    import org.apache.log4j.PropertyConfigurator;
+    import java.util.Properties;
+    import java.io.FileInputStream;
+    import java.io.IOException;
 
-   /**     * A simple Java Log4j example class.     * @author alvin alexander, devdaily.com     */
-   public class Log4JExample
+    /**     * A simple Java Log4j example class.     * @author alvin alexander, devdaily.com     */
+    public class Log4JExample
     {
       // our log4j category reference
       static final Category log = Category . getInstance(Log4JDemo. class);
       static final String LOG_PROPERTIES_FILE = "lib/Log4J.properties" ;
 
-   public static void main (String [] args)
-     {
+      public static void main (String [] args)
+      {
         // call our constructor
         new Log4JExample();
 
-   // Log4J is now loaded; try it
-       log . info("leaving the main method of Log4JDemo" );
+        // Log4J is now loaded; try it
+        log . info("leaving the main method of Log4JDemo" );
       }
 
-   public Log4JExample ()
+      public Log4JExample ()
       {
         initializeLogger();
         log . info( "Log4JExample - leaving the constructor ..." );
       }
 
-   private void initializeLogger()
-     {
+      private void initializeLogger()
+      {
         Properties logProperties = new Properties();
 
-   try
-       {
+        try
+        {
           // load our log4j properties / configuration file
           logProperties . load(new FileInputStream( LOG_PROPERTIES_FILE));
           PropertyConfigurator . configure(logProperties);
@@ -287,4 +294,5 @@ UI Mapping
 Page Object Design Pattern
 Data Driven Testing
 Database Validation
-Java Documentation
+Java Documentatuin
+  
